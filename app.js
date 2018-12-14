@@ -1,7 +1,6 @@
 function onReady() {
 
     //declare variable
-    var toDos = []
     const toDos = [];
     const addToDoForm = document.getElementById('addToDoForm');
     //set to 0    
@@ -60,13 +59,14 @@ function onReady() {
             });
 
         });
-        addToDoForm.addEventListener('submit', event => {
-            event.preventDefault();
-            createNewToDo();
-        });
-        renderTheUI();
     }
+    addToDoForm.addEventListener('submit', event => {
+        event.preventDefault();
+        createNewToDo();
+    });
+    renderTheUI();
+}
 
-    window.onload = function () {
-        onReady();
-    };
+window.onload = function () {
+    onReady();
+};
