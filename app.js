@@ -1,7 +1,7 @@
 function onREady() {
     let id = 0; //declare let id of 0
     let toDos = [];
-    const toDos = []; //todos array
+    //const toDos = []; //todos array
 
     //create newtodo function from event listener
     const addToDoForm = document.getElementById('addToDoForm');
